@@ -1,0 +1,8 @@
+# Local tooling state (never commit)
+.claude/
+CLAUDE.md
+
+# Environment files hold real secrets — commit only .env.example
+.env
+.env.*
+!.env.example
