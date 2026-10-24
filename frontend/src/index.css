@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ซ่อนลายน้ำและข้อความลิขสิทธิ์ด้านล่างของ Google Maps เพื่อความสะอาดของ UI */
+.gm-style-cc {
+  display: none !important;
+}
+.gmnoprint {
+  display: none !important;
+}
+a[title="Report errors in the road map or imagery to Google"] {
+  display: none !important;
+}
+.gm-style .gm-style-cc span, .gm-style .gm-style-cc a {
+  display: none !important;
+}
+
+@theme {
+    --color-primary: #D3D3D3;
+    --color-secondary: #FFFFFF;
+    --color-tertiary: #878787;
+    --color-fourth: #5E5E5E;
+    --color-blue: #1A4A96;
+    --font-sans: "Sarabun", sans-serif;
+}
+
+body {
+    font-family: "Sarabun", sans-serif;
+}
+
+html, body, #root, * {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar, 
+#root::-webkit-scrollbar, 
+*::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+}
